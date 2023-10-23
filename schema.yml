@@ -1,9 +1,16 @@
 version: 2
 
+
 models:
-  - name: master_equipment
+  - name: order_header
     columns:
-      - name: equipment
+      - name: sales_document
         tests:
-          - unique
           - not_null
+          - unique
+  - name: order_item_detail
+    columns:
+      - name: sales_document_item
+        tests:
+          - not_null
+          - unique
