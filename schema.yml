@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: master_equipment
+    columns:
+      - name: equipment
+        tests:
+          - unique
+          - not_null
